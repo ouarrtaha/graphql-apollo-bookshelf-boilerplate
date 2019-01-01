@@ -6,7 +6,7 @@ module.exports = {
     ],
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: "js/bundle.js",
+        filename: "bundle.js",
     },
     mode: process.env.NODE_ENV || 'development', //use webpack --mode development
     devServer: {
