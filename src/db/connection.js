@@ -1,6 +1,6 @@
 const knex = require('knex')
-const knex_config = require('./knexfile.js')
-const bookshelf = require('bookshelf')(knex(knex_config[process.env.NODE_ENV]));
+const config = require('./knexfile.js')[process.env.NODE_ENV]
+const bookshelf = require('bookshelf')(knex(config));
 const db = knex(config)
 
 

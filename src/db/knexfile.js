@@ -1,14 +1,15 @@
-require('dotenv').config()
-
 module.exports = {
+    //Will be used if process.env.NODE_ENV == development
     development: {
         client: 'sqlite3',
         connection: {
-            filename: './dev.sqlite3'
+            filename: './src/db/dev.sqlite3'
         },
         useNullAsDefault: true,
         debug: true
     },
+
+    //Will be used if process.env.NODE_ENV == production
     production: {
         client: 'postgresql',
         connection: {

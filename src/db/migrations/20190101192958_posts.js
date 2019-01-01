@@ -2,11 +2,11 @@
 exports.up = function(knex, Promise) {
     return knex.schema.createTableIfNotExists('posts', function (table){
         table.increments()
-        table.string('post')
+        table.string('title')
         table.integer('status')
     })
 };
 
 exports.down = function(knex, Promise) {
-    return knex.schema.dropTable('post')
+    return knex.schema.dropTable('posts')
 };

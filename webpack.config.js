@@ -1,4 +1,5 @@
 const path = require('path')
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
     entry: [
@@ -35,5 +36,6 @@ module.exports = {
         alias: {
             '@': path.resolve(__dirname, 'src')
         }
-    }
+    },
+    externals: [nodeExternals()]
 }

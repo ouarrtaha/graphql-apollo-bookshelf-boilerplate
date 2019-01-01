@@ -1,8 +1,12 @@
+//NPM
 import express from 'express'
-import config from './config'
 import chalk from 'chalk'
 import {ApolloServer} from 'apollo-server-express'
+
+//Project
+import config from './config'
 import schema from './graphql'
+import Models from './models'
 
 const app = express()
 
@@ -12,10 +16,15 @@ app.get('/', (req, res) => {
     })
 })
 
+//Context object to be passed to server
+const context = {
+    ...Models
+}
 
 //Create Apollo & GraphQl server
 const server = new ApolloServer({
     schema,
+    context,
     cacheControl: true,
     playground: false
 })
@@ -29,6 +38,7 @@ server.applyMiddleware({
 //Create Apollo playground
 const playground = new ApolloServer({
     schema,
+    context,
     cacheControl: false,
     playground: true
 })
