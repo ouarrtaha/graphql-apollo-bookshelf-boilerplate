@@ -1,0 +1,19 @@
+type Article  {
+    id: ID!
+    title: String!
+    negatifVotes: Int!
+    positifVotes: Int!
+}
+
+type Category  {
+    id: String!
+    title: String!
+}
+
+type Event  {
+    id: ID!
+}
+
+type Query {
+    getArticles(limit: Int!, offset: Int): [Article]
+}
