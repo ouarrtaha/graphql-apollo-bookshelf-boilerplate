@@ -1,0 +1,23 @@
+{
+  "name": "apollo-boilerplate",
+  "version": "1.0.0",
+  "description": "Graphql Apollo Express Backend w/ Webpack, babel, ES6, ESLint, Hot-Reload Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "graphql",
+    "apollo",
+    "express",
+    "graphql",
+    "boilerplate",
+    "boilerplate"
+  ],
+  "author": "Taha OUARRAK",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.28.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
