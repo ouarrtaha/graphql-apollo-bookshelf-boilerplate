@@ -6,9 +6,10 @@ module.exports = {
     ],
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: "bundle.js",
+        filename: "server.js",
     },
-    mode: process.env.NODE_ENV || 'development', //use webpack --mode development
+    target: 'node',
+    mode: process.env.NODE_ENV || 'development', //set 'development' if webpack --mode is not specified
     devServer: {
         contentBase: './dist'
     },
