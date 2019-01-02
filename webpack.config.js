@@ -1,41 +1,41 @@
-const path = require('path')
+const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
-    entry: [
-        './src/index.js'
+  entry: [
+    './src/index.js',
+  ],
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'server.js',
+  },
+  target: 'node',
+  mode: process.env.NODE_ENV || 'development',
+  devServer: {
+    contentBase: './dist',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+      {
+        test: /\.(graphql|gql)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'graphql-tag/loader',
+        },
+      },
     ],
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: "server.js",
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
     },
-    target: 'node',
-    mode: process.env.NODE_ENV || 'development', //set 'development' if webpack --mode is not specified
-    devServer: {
-        contentBase: './dist'
-    },
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader'
-                }
-            },
-            {
-                test: /\.(graphql|gql)$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'graphql-tag/loader'
-                }
-            }
-        ]
-    },
-    resolve: {
-        alias: {
-            '@': path.resolve(__dirname, 'src')
-        }
-    },
-    externals: [nodeExternals()]
-}
+  },
+  externals: [nodeExternals()],
+};
