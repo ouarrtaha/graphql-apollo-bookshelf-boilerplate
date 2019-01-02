@@ -9,7 +9,7 @@
     "watch": "webpack --watch --mode development",
     "start:dev": "npm-run-all -p nodemon watch ",
     "build": "rm -rf dist && webpack --mode production",
-    "start": "node ./dist/server.js",
+    "start": "npm run build && node ./dist/server.js",
     "lint:fix": "eslint --fix --ext .js src"
   },
   "keywords": [
@@ -31,6 +31,7 @@
     "chalk": "latest",
     "express": "latest",
     "graphql": "^14.0.2",
+    "graphql-tag": "^2.10.0",
     "graphql-tools": "^4.0.3",
     "knex": "^0.16.3",
     "merge-graphql-schemas": "^1.5.8",

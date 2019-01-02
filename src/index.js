@@ -2,11 +2,13 @@
 import express from 'express';
 import { ApolloServer } from 'apollo-server-express';
 import * as chalk from 'chalk';
+import path from 'path';
 
 // Project
 import config from './config';
 import schema from './graphql';
 import Models from './models';
+
 
 const app = express();
 
