@@ -1,26 +1,26 @@
-import {makeExecutableSchema} from 'graphql-tools'
-import {mergeResolvers, mergeTypes} from 'merge-graphql-schemas'
+import { makeExecutableSchema } from 'graphql-tools';
+import { mergeResolvers, mergeTypes } from 'merge-graphql-schemas';
 
-//Import resolvers
-import postResolvers from './resolvers/post'
+// Import resolvers
+import postResolvers from './resolvers/post';
 
-//Import typeDefs
-import post from './types/post.gql'
-import comment from './types/comment.gql'
+// Import typeDefs
+import post from './types/post.gql';
+import comment from './types/comment.gql';
 
-//Merge types
+// Merge types
 const typeDefs = mergeTypes([
-    post,
-    comment
-])
+  post,
+  comment,
+]);
 
-//Merge resolvers
+// Merge resolvers
 const resolvers = mergeResolvers([
-    postResolvers,
-])
+  postResolvers,
+]);
 
-//Export generated schema
+// Export generated schema
 export default makeExecutableSchema({
-    typeDefs,
-    resolvers
-})
+  typeDefs,
+  resolvers,
+});

@@ -1,10 +1,10 @@
-import {bookshelf} from '@/db/connection'
+import { bookshelf } from '@/db/connection';
 
 export const Comments = bookshelf.Model.extend({
-    tableName: 'comments'
+  tableName: 'comments',
 });
 
 
 export default {
-    Comments
-}
+  Comments,
+};
