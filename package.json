@@ -1,7 +1,7 @@
 {
   "name": "apollo-boilerplate",
   "version": "1.0.0",
-  "description": "Graphql Apollo Express Backend w/ Webpack, babel, ES6, ESLint, Hot-Reload Template",
+  "description": "Graphql Apollo Express Backend w/ Webpack, babel, ES6, ESLint, knex, bookshelf, Hot-Reload Template",
   "main": "index.js",
   "scripts": {
     "dev": "rm -rf dist && webpack --mode development",
