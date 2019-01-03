@@ -1,6 +1,6 @@
 {
   "name": "graphql-apollo-bookshelf-boilerplate",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "Graphql Apollo Express Backend w/ Webpack, babel, ES6, ESLint, knex, bookshelf, Hot-Reload Template",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,10 @@
     "start": "npm run build && node ./dist/server.js",
     "lint:fix": "eslint --fix --ext .js src"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ouarrtaha/graphql-apollo-bookshelf-boilerplate.git"
+  },
   "keywords": [
     "graphql",
     "apollo",
@@ -22,7 +26,11 @@
     "bookshelf"
   ],
   "author": "Taha OUARRAK <tahaouarrak@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ouarrtaha/graphql-apollo-bookshelf-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ouarrtaha/graphql-apollo-bookshelf-boilerplate#readme",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "apollo-server": "^2.3.1",
