@@ -1,6 +1,6 @@
 {
-  "name": "apollo-boilerplate",
-  "version": "1.0.0",
+  "name": "graphql-apollo-bookshelf-boilerplate",
+  "version": "1.2.0",
   "description": "Graphql Apollo Express Backend w/ Webpack, babel, ES6, ESLint, knex, bookshelf, Hot-Reload Template",
   "main": "index.js",
   "scripts": {
