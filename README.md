@@ -1,7 +1,7 @@
 # graphql-apollo-bookshelf-boilerplate
 
 > Simple GraphQL, Apollo Backend w/ Webpack, Babel, ES6, ESLint, Knex, Bookshelf, Hot-Reload Template.
-With a ready bookshelf setup with knex. 
+With a ready bookshelf setup. 
 
 ![Sample data](https://i.ibb.co/XCS0CF2/Screen-Shot-2019-01-03-at-00-54-15.jpg)
 
@@ -21,7 +21,7 @@ With a ready bookshelf setup with knex.
 ## Usage
 
 ```bash
-git clone https://github.com/ouarrtaha/apollo-boilerplate.git
+git clone https://github.com/ouarrtaha/graphql-apollo-bookshelf-boilerplate.git
 
 cd apollo-boilerplate 
 
