@@ -1,5 +1,4 @@
 module.exports = {
-  // Will be used if process.env.NODE_ENV == development
   development: {
     client: 'sqlite3',
     connection: {
@@ -9,7 +8,6 @@ module.exports = {
     debug: true,
   },
 
-  // Will be used if process.env.NODE_ENV == production
   production: {
     client: 'postgresql',
     connection: {
