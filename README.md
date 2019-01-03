@@ -1,4 +1,4 @@
-# graphql-boilerplate
+# graphql-apollo-bookshelf-boilerplate
 
 > Simple GraphQL, Apollo Backend w/ Webpack, Babel, ES6, ESLint, Knex, Bookshelf, Hot-Reload Template.
 With a ready bookshelf setup with knex. 
