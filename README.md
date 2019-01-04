@@ -23,7 +23,7 @@ With a ready bookshelf setup.
 ```bash
 git clone https://github.com/ouarrtaha/graphql-apollo-bookshelf-boilerplate.git
 
-cd apollo-boilerplate 
+cd graphql-apollo-bookshelf-boilerplate 
 
 # make it to your own
 rm -rf .git
