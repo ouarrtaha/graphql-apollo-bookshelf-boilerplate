@@ -41,7 +41,7 @@
     "graphql": "^14.0.2",
     "graphql-tag": "^2.10.0",
     "graphql-tools": "^4.0.3",
-    "knex": "^0.19.5",
+    "knex": "^2.4.0",
     "merge-graphql-schemas": "^1.5.8",
     "pg": "^7.7.1",
     "sqlite3": "^4.0.4"
